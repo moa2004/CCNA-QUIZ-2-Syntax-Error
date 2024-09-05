@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCNA Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: rgb(158, 151, 151);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+        #logo {
+            display: block;
+            margin: 0 auto;
+            width: 150px;
+            height: auto;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question p {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+        .question label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: #000000;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img id="logo" src="SET Team.png" alt="Syntax Error Team Logo">
+        <h1>CCNA Networking Quiz</h1>
+        <h2>Session 2</h2>
+
+        <form action="https://formspree.io/f/mldrnapd" method="post">
+            <p><strong>Quiz Name:</strong> <input type="text" name="quiz_name" placeholder="Enter quiz name" required></p>
+            <p><strong>Participant Name:</strong> <input type="text" name="name" placeholder="Enter your name" required></p>
+            <p><strong>Email Address:</strong> <input type="email" name="email" placeholder="Enter your email" required></p>
+
+            <div class="question">
+                <p>1. A network has grown too large for technicians to configure network addresses and hosts files for name resolution. Which two application layer services should be added to the server to allow these needs to be satisfied dynamically? (Choose two.)</p>
+                <label><input type="checkbox" name="q1[]" value="DNS">DNS</label>
+                <label><input type="checkbox" name="q1[]" value="DHCP">DHCP</label>
+                <label><input type="checkbox" name="q1[]" value="FTP">FTP</label>
+                <label><input type="checkbox" name="q1[]" value="SNMP">SNMP</label>
+            </div>
+
+            <div class="question">
+                <p>2. Which three IP addresses are considered private addresses? (Choose three.)</p>
+                <label><input type="checkbox" name="q2[]" value="10.172.168.1">10.172.168.1</label>
+                <label><input type="checkbox" name="q2[]" value="192.168.5.5">192.168.5.5</label>
+                <label><input type="checkbox" name="q2[]" value="192.167.10.10">192.167.10.10</label>
+                <label><input type="checkbox" name="q2[]" value="172.19.20.5">172.19.20.5</label>
+            </div>
+
+            <div class="question">
+                <p>3. Which three layers of the OSI model are comparable in function to the application layer of the TCP/IP model? (Choose three.)</p>
+                <label><input type="checkbox" name="q3[]" value="Application">Application</label>
+                <label><input type="checkbox" name="q3[]" value="Presentation">Presentation</label>
+                <label><input type="checkbox" name="q3[]" value="Session">Session</label>
+                <label><input type="checkbox" name="q3[]" value="Transport">Transport</label>
+            </div>
+
+            <div class="question">
+                <p>4. Which device should be used for enabling a host to communicate with another host on a different network?</p>
+                <label><input type="radio" name="q4" value="Router">Router</label>
+                <label><input type="radio" name="q4" value="Switch">Switch</label>
+                <label><input type="radio" name="q4" value="Hub">Hub</label>
+                <label><input type="radio" name="q4" value="Access Point">Access Point</label>
+            </div>
+
+            <div class="question">
+                <p>5. Refer to the exhibit. A host is having problems connecting to devices on other networks. What is the problem?</p>
+                <label><input type="radio" name="q5" value="The default gateway is incorrect.">The default gateway is incorrect.</label>
+                <label><input type="radio" name="q5" value="The subnet mask is incorrect.">The subnet mask is incorrect.</label>
+                <label><input type="radio" name="q5" value="The IP address is incorrect.">The IP address is incorrect.</label>
+                <label><input type="radio" name="q5" value="The switch is in the wrong mode.">The switch is in the wrong mode.</label>
+            </div>
+
+            <div class="question">
+                <p>6. What is the maximum size of a PDU that can be transmitted over an Ethernet network?</p>
+                <label><input type="radio" name="q6" value="1500 bytes">1500 bytes</label>
+                <label><input type="radio" name="q6" value="64 bytes">64 bytes</label>
+                <label><input type="radio" name="q6" value="1518 bytes">1518 bytes</label>
+                <label><input type="radio" name="q6" value="4096 bytes">4096 bytes</label>
+            </div>
+
+            <div class="question">
+                <p>7. Which type of network topology combines the characteristics of the star and bus topologies?</p>
+                <label><input type="radio" name="q7" value="Hybrid">Hybrid</label>
+                <label><input type="radio" name="q7" value="Mesh">Mesh</label>
+                <label><input type="radio" name="q7" value="Ring">Ring</label>
+                <label><input type="radio" name="q7" value="Point-to-Point">Point-to-Point</label>
+            </div>
+
+            <div class="question">
+                <p>8. Which command is used to view the IP address configuration of a Windows machine?</p>
+                <label><input type="radio" name="q8" value="ipconfig">ipconfig</label>
+                <label><input type="radio" name="q8" value="ifconfig">ifconfig</label>
+                <label><input type="radio" name="q8" value="ping">ping</label>
+                <label><input type="radio" name="q8" value="tracert">tracert</label>
+            </div>
+
+            <div class="question">
+                <p>9. What is the role of ARP in the TCP/IP protocol suite?</p>
+                <label><input type="radio" name="q9" value="Resolves IP addresses to MAC addresses">Resolves IP addresses to MAC addresses</label>
+                <label><input type="radio" name="q9" value="Resolves MAC addresses to IP addresses">Resolves MAC addresses to IP addresses</label>
+                <label><input type="radio" name="q9" value="Resolves hostnames to IP addresses">Resolves hostnames to IP addresses</label>
+                <label><input type="radio" name="q9" value="Resolves IP addresses to hostnames">Resolves IP addresses to hostnames</label>
+            </div>
+
+            <div class="question">
+                <p>10. What is the purpose of the subnet mask in an IP address?</p>
+                <label><input type="radio" name="q10" value="It determines the network and host portions of an IP address.">It determines the network and host portions of an IP address.</label>
+                <label><input type="radio" name="q10" value="It resolves MAC addresses to IP addresses.">It resolves MAC addresses to IP addresses.</label>
+                <label><input type="radio" name="q10" value="It defines the class of the IP address.">It defines the class of the IP address.</label>
+                <label><input type="radio" name="q10" value="It identifies the default gateway.">It identifies the default gateway.</label>
+            </div>
+
+            <div class="question">
+                <p>11. What protocol does a web browser use to retrieve web pages from a web server?</p>
+                <label><input type="radio" name="q11" value="HTTP">HTTP</label>
+                <label><input type="radio" name="q11" value="FTP">FTP</label>
+                <label><input type="radio" name="q11" value="SMTP">SMTP</label>
+                <label><input type="radio" name="q11" value="IMAP">IMAP</label>
+            </div>
+
+            <div class="question">
+                <p>12. Which port is used by HTTP by default?</p>
+                <label><input type="radio" name="q12" value="80">80</label>
+                <label><input type="radio" name="q12" value="443">443</label>
+                <label><input type="radio" name="q12" value="21">21</label>
+                <label><input type="radio" name="q12" value="22">22</label>
+            </div>
+
+            <div class="question">
+                <p>13. Which transport layer protocol is used for reliable data transfer?</p>
+                <label><input type="radio" name="q13" value="TCP">TCP</label>
+                <label><input type="radio" name="q13" value="UDP">UDP</label>
+                <label><input type="radio" name="q13" value="ICMP">ICMP</label>
+                <label><input type="radio" name="q13" value="IGMP">IGMP</label>
+            </div>
+
+            <div class="question">
+                <p>14. Which transport layer protocol is connectionless and used for fast transmission?</p>
+                <label><input type="radio" name="q14" value="UDP">UDP</label>
+                <label><input type="radio" name="q14" value="TCP">TCP</label>
+                <label><input type="radio" name="q14" value="ICMP">ICMP</label>
+                <label><input type="radio" name="q14" value="IGMP">IGMP</label>
+            </div>
+
+            <div class="question">
+                <p>15. Which layer of the OSI model handles error detection and correction?</p>
+                <label><input type="radio" name="q15" value="Data Link">Data Link</label>
+                <label><input type="radio" name="q15" value="Network">Network</label>
+                <label><input type="radio" name="q15" value="Transport">Transport</label>
+                <label><input type="radio" name="q15" value="Session">Session</label>
+            </div>
+
+            <div class="question">
+                <p>16. What is the purpose of a subnet mask in an IP network?</p>
+                <label><input type="radio" name="q16" value="Defines the network and host portions of an IP address">Defines the network and host portions of an IP address</label>
+                <label><input type="radio" name="q16" value="Defines the default gateway for a network">Defines the default gateway for a network</label>
+                <label><input type="radio" name="q16" value="Determines the physical MAC address of the host">Determines the physical MAC address of the host</label>
+                <label><input type="radio" name="q16" value="Determines the DNS server for the network">Determines the DNS server for the network</label>
+            </div>
+
+            <div class="question">
+                <p>17. What does DHCP stand for?</p>
+                <label><input type="radio" name="q17" value="Dynamic Host Configuration Protocol">Dynamic Host Configuration Protocol</label>
+                <label><input type="radio" name="q17" value="Dynamic Host Communication Protocol">Dynamic Host Communication Protocol</label>
+                <label><input type="radio" name="q17" value="Dynamic Host Configuration Port">Dynamic Host Configuration Port</label>
+                <label><input type="radio" name="q17" value="Direct Host Configuration Protocol">Direct Host Configuration Protocol</label>
+            </div>
+
+            <div class="question">
+                <p>18. What is the purpose of NAT in networking?</p>
+                <label><input type="radio" name="q18" value="Translates private IP addresses to public IP addresses">Translates private IP addresses to public IP addresses</label>
+                <label><input type="radio" name="q18" value="Assigns IP addresses to devices on a network">Assigns IP addresses to devices on a network</label>
+                <label><input type="radio" name="q18" value="Routes packets across different networks">Routes packets across different networks</label>
+                <label><input type="radio" name="q18" value="Monitors network traffic for security threats">Monitors network traffic for security threats</label>
+            </div>
+
+            <div class="question">
+                <p>19. What is the function of a router in a network?</p>
+                <label><input type="radio" name="q19" value="Forwards packets between different networks">Forwards packets between different networks</label>
+                <label><input type="radio" name="q19" value="Switches packets within a local network">Switches packets within a local network</label>
+                <label><input type="radio" name="q19" value="Assigns IP addresses to devices on a network">Assigns IP addresses to devices on a network</label>
+                <label><input type="radio" name="q19" value="Translates private IP addresses to public IP addresses">Translates private IP addresses to public IP addresses</label>
+            </div>
+
+            <div class="question">
+                <p>20. What is the purpose of the ARP protocol?</p>
+                <label><input type="radio" name="q20" value="Maps IP addresses to MAC addresses">Maps IP addresses to MAC addresses</label>
+                <label><input type="radio" name="q20" value="Maps MAC addresses to IP addresses">Maps MAC addresses to IP addresses</label>
+                <label><input type="radio" name="q20" value="Translates private IP addresses to public IP addresses">Translates private IP addresses to public IP addresses</label>
+                <label><input type="radio" name="q20" value="Routes packets between networks">Routes packets between networks</label>
+            </div>
+
+            <input type="submit" value="Submit Quiz">
+        </form>
+    </div>
+
+</body>
+</html>
